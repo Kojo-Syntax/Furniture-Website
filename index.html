@@ -4,56 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Website</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
     <link rel="stylesheet" href="assets/style.css">
+
+
 </head>
-
 <body>
-    <div id="NavigationBar">
-        <nav>
-            <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Page</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><form id="Search">
-                <input type="search" id="query" placeholder="Search products">
-                <button>Search</button>
-            </form></li>
-        </ul>
-        </nav>
-    </div>
-<br>
-    <div class="image">
-        <img src="assets/4.0_Design_Concept_room_for_retail-2_okntq3.jpg" alt="Furniture Image">
-        <div class="text">
-            <h4>70% SALE OFF</h4>
-            <br>
-            <h2>FURNITURE AT COST</h2>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, officia deleniti distinctio aperiam, totam nobis dignissimos laborum consequatur nisi praesentium aut recusandae inventore aliquam ipsa eaque eos alias iure eius.</p>
-            <button>Discover More</button>
-        </div>
-    </div>
+   <header class="header">
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">About</a>
+        <a href="#">Page</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <form class = "searchbox">
+        <input type="search">
+        <button><box-icon name='search'></box-icon></button>
+        </form>
+        
+    </nav>
+   </header> 
 
-    <div>
-        <h3>POPULAR PRODUCTS</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, consequatur esse modi iusto, veniam placeat est, earum quasi temporibus corporis in! Ab harum similique quibusdam necessitatibus. Vel amet odio quasi!</p>
-        <nav>
-            <a class="active" href="#">Sofa</a>
-            <a href="#">Sofa</a>
-            <a href="#">Table</a>
-            <a href="#">Chair</a>
-            <a href="#">Bed</a>
-            <a href="#">Lighting</a>
-            <a href="#">Decore</a>
-        </nav>
+   <section id="Home">
+
+    <img src="assets/4.0_Design_Concept_room_for_retail-2_okntq3.jpg" alt="Furniture Image">
+    <div id="TextShape" class="TextShape">
+        <h4>70% SALE OFF</h4>
+        <h1>FURNITURE AT COST</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia libero omnis maiores neque ut! Animi recusandae doloremque, nobis exercitationem iure dolores, itaque blanditiis eveniet libero perferendis unde eligendi, reprehenderit dolorum?</p>
+        <button>Discover More</button>
     </div>
-    <div>
-        <img src="assets/pngwing.com (1).png" alt="">
-        <img src="assets/pngwing.com (2).png" alt="">
-        <img src="assets/pngwing.com.png" alt="">
-    </div>
+   </section>
+
+   <section class="Product">
+    <h3>
+        POPULAR PRODUCTS
+    </h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dicta ab ipsa est consequatur. Tenetur beatae est consectetur, nisi aut minus, eligendi saepe, nam aperiam fuga libero consequuntur quasi distinctio.</p>
+
+    <nav>
+        <a href="#">Sofa</a>
+        <a href="#">Tables</a>
+        <a href="#">Chair</a>
+        <a href="#">Bed</a>
+        <a href="#">Lighting</a>
+        <a href="#">Decore</a>
+    </nav>
+   </section>
+
 </body>
 </html>
