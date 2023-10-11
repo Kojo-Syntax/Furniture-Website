@@ -12,11 +12,11 @@
 }
 
 :root {
-    --bg-color: #f3e0d9;
+    --bg-color: #132043;
     --second-bg-color: #ffffff;
-    --text-color: #9b9ea3;
-    --main-color: #fd8e57;
-    --second-text-color: #30283d;
+    --text-color: #fff;
+    --main-color: #FFBB5C;
+    --second-text-color: #ffff;
 }
 
 
@@ -45,12 +45,13 @@ section {
 }
 
 .header form input{
-    padding: 0;
-    background-color: var(--bg-color);
-    color: var(--second-text-color);
+    padding: 1rem 2.8rem;
+    background-color: var(--second-bg-color);
+    color: var(--bg-color);
     outline-width: 1px;
     outline-style: solid;
     outline-color: #30283d;
+    border-radius: 4px;
 }
 
 
@@ -67,6 +68,111 @@ section {
 }
 
 .navbar a:hover{
+    color: var(--main-color);
+    transition: .3s;
+    cursor: default
+}
+
+#home{
+    background-image: url('Images/4.0_Design_Concept_room_for_retail-2_okntq3.jpg');
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+
+}
+
+#textShape {
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4rem 3rem;
+    border-radius: 10px;
+}
+
+#textShape h4{
+    color: grey;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+#textShape h1{
+    color:#30283d;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+#textShape p{
+    color: grey;
+    justify-content: left;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 500;
+
+}
+
+#textShape .btn{
+    margin-top: 10px;
+    background-color: var(--main-color);
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--second-text-color);
+    border-radius: 1rem;
+    transition: .5s ease;
+}
+
+#textShape .btn:hover{
+    background-color: var(--main-color);
+    color: var(--second-text-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+#home .product {
+    margin-top: 150px;
+    text-align: center;
+}
+
+#home .product h3{
+    font-size: 3rem;
+    align-items: center;
+    padding-bottom: 2rem;
+    font-weight: 800;
+}
+
+#home .product p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+#home .product nav a{
+    padding-top: 10px;
+    font-size: 1.7rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: 4rem;
+    cursor: default;
+    padding: 5px;
+}
+
+#home .product nav a:hover{
     color: var(--main-color);
     transition: .3s;
     cursor: default
